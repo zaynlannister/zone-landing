@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const FooterSection = () => {
   return (
-    <StyledFooter className="my-container">
-      <div className="footer py-12">
+    <StyledFooter className="border-t border-t-silver py-8">
+      <div className="my-container footer py-12">
         <div>
           <div className="flex items-center gap-4">
             <img src="/zone-logo.svg" alt="img" />
