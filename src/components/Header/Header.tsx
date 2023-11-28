@@ -10,9 +10,9 @@ const Header = () => {
     setMenuOpen(!menuOpen);
 
     if (menuOpen) {
-      document.body.classList.remove("menu-open");
+      document.documentElement.classList.remove("menu-open");
     } else {
-      document.body.classList.add("menu-open");
+      document.documentElement.classList.add("menu-open");
     }
   };
   return (

@@ -7,7 +7,7 @@ const FeatureSection = () => {
         <div className="flex items-center justify-between gap-2 mb-12">
           <img className="feature-bg-1" src="/img/feature-bg1.png" alt="img" />
           <div>
-            <p className="text-[42px] font-[700] mb-4">
+            <p className="text-[42px] font-[700] mb-4 feature-title">
               We complete every projects extra care as customer need
             </p>
             <p className="mb-6">
@@ -23,7 +23,7 @@ const FeatureSection = () => {
         </div>
         <div className="flex items-center justify-between gap-2">
           <div>
-            <p className="text-[42px] font-[700] mb-4">
+            <p className="text-[42px] font-[700] mb-4 feature-title">
               Desire of customer is all
             </p>
             <p className="mb-6">
@@ -54,6 +54,11 @@ const StyledFeature = styled.div`
     .feature-bg-1,
     .feature-bg-2 {
       display: none;
+    }
+  }
+  @media (max-width: 530px) {
+    .feature-title {
+      font-size: 30px;
     }
   }
 `;

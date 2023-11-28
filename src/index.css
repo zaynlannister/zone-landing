@@ -20,7 +20,7 @@ body {
   color: #f9fafb;
 }
 
-body.menu-open {
+html.menu-open {
   overflow-y: hidden;
 }
 
