@@ -20,11 +20,14 @@ const Header = () => {
   return (
     <StyledHeader className="my-container">
       <div className="header flex justify-between items-center py-8 z-[50]">
-        <div className="flex items-center gap-4">
+        <div data-aos="fade-right" className="flex items-center gap-4">
           <img src="/zone-logo.svg" alt="logo" />
           <p className="text-[20px] font-[500]">Zone.</p>
         </div>
-        <div className="flex items-center gap-10 header-nav">
+        <div
+          data-aos="fade-left"
+          className="flex items-center gap-10 header-nav"
+        >
           <a className="custom-link" href="#">
             Home
           </a>
@@ -46,17 +49,22 @@ const Header = () => {
       </div>
       <div className="header-content flex items-center py-24 relative">
         <div className="w-[50%] header__text-container">
-          <p className="header-title text-[50px] font-[700]">
+          <p
+            data-aos="fade-left"
+            className="header-title text-[50px] font-[700]"
+          >
             Virtual Reality Business Solutions
           </p>
-          <p className="text-[#E5E7EB] font-[500] py-6">
+          <p data-aos="fade-left" className="text-[#E5E7EB] font-[500] py-6">
             We have over 15 year exprience in business consultting arena. We
             have over 15 year exprience in business consultting arena and
             artficial intelligence.
           </p>
-          <button className="primary-button">Join Us</button>
+          <button data-aos="fade-up" className="primary-button">
+            Join Us
+          </button>
         </div>
-        <div className="w-[50%] header__img-container">
+        <div data-aos="fade-down" className="w-[50%] header__img-container">
           <img
             width="400px"
             className="absolute top-0 right-0"

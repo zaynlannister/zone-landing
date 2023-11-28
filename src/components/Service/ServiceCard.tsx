@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ServiceCard = (props: any) => {
   return (
-    <StyledCard imgNumber={props.img}>
+    <StyledCard data-aos="fade-right" imgNumber={props.img}>
       <div className="service-img">
         <img src={`/img/service-${props.img}.svg`} alt="img" />
       </div>

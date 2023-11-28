@@ -38,10 +38,16 @@ const ServiceSection = () => {
   return (
     <StyledService className="my-container">
       <div className="service py-8">
-        <p className="service-title text-[42px] font-[700] text-center mb-4">
+        <p
+          data-aos="fade-up"
+          className="service-title text-[42px] font-[700] text-center mb-4"
+        >
           Our Service
         </p>
-        <p className="service-description text-center w-[600px] mx-auto">
+        <p
+          data-aos="fade-up"
+          className="service-description text-center w-[600px] mx-auto"
+        >
           We turn information into actionable insights We work to understand
           your issues and are driven to ask better questions in the pursuit of
           making work.

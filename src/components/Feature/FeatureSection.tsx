@@ -5,8 +5,13 @@ const FeatureSection = () => {
     <StyledFeature className="my-container">
       <div className="feature py-12">
         <div className="flex items-center justify-between gap-2 mb-12">
-          <img className="feature-bg-1" src="/img/feature-bg1.png" alt="img" />
-          <div>
+          <img
+            data-aos="fade-right"
+            className="feature-bg-1"
+            src="/img/feature-bg1.png"
+            alt="img"
+          />
+          <div data-aos="fade-left">
             <p className="text-[42px] font-[700] mb-4 feature-title">
               We complete every projects extra care as customer need
             </p>
@@ -22,7 +27,7 @@ const FeatureSection = () => {
           </div>
         </div>
         <div className="flex items-center justify-between gap-2">
-          <div>
+          <div data-aos="fade-left">
             <p className="text-[42px] font-[700] mb-4 feature-title">
               Desire of customer is all
             </p>
@@ -36,7 +41,12 @@ const FeatureSection = () => {
             </p>
             <button className="primary-button">Read more</button>
           </div>
-          <img className="feature-bg-2" src="/img/feature-bg2.png" alt="img" />
+          <img
+            data-aos="fade-right"
+            className="feature-bg-2"
+            src="/img/feature-bg2.png"
+            alt="img"
+          />
         </div>
       </div>
     </StyledFeature>
