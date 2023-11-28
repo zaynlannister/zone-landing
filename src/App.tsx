@@ -1,3 +1,4 @@
+import FeatureSection from "./components/Feature/FeatureSection";
 import FooterSection from "./components/Footer/FooterSection";
 import Header from "./components/Header/Header";
 import ServiceSection from "./components/Service/ServiceSection";
@@ -10,6 +11,9 @@ const App = () => {
       </>
       <>
         <ServiceSection />
+      </>
+      <>
+        <FeatureSection />
       </>
       <>
         <FooterSection />
