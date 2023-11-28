@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif, Arial;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: #f9fafb;
+  font-weight: 500;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+.primary-button {
+  border-radius: 5px;
+  background: linear-gradient(90deg, #2563eb 0.36%, #d946ef 201.02%);
+  padding: 10px 24px;
+  transition: 150ms all;
+}
+
+.primary-button:hover {
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2) inset;
 }
 
 .my-container {
