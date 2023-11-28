@@ -1,9 +1,15 @@
 import Header from "./components/Header/Header";
+import ServiceSection from "./components/Service/ServiceSection";
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <>
+        <Header />
+      </>
+      <>
+        <ServiceSection />
+      </>
     </div>
   );
 };
