@@ -64,7 +64,7 @@ const Header = () => {
             Join Us
           </button>
         </div>
-        <div data-aos="fade-down" className="w-[50%] header__img-container">
+        <div className="w-[50%] header__img-container">
           <img
             width="400px"
             className="absolute top-0 right-0"
