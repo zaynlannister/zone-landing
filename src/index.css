@@ -9,10 +9,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "DM Sans", sans-serif, Arial;
   background: #111827;
   color: #f9fafb;
+}
+
+body.menu-open {
+  overflow-y: hidden;
 }
 
 .custom-link {

@@ -1,9 +1,23 @@
+import React from "react";
 import styled from "styled-components";
+import BurgerMenu from "../Burger/BurgerMenu";
+import MobileMenu from "../Burger/MobileMenu";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = React.useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+
+    if (menuOpen) {
+      document.body.classList.remove("menu-open");
+    } else {
+      document.body.classList.add("menu-open");
+    }
+  };
   return (
     <StyledHeader className="my-container">
-      <div className="header flex justify-between items-center py-8 z-[50] relative">
+      <div className="header flex justify-between items-center py-8 z-[50]">
         <div className="flex items-center gap-4">
           <img src="/zone-logo.svg" alt="logo" />
           <p className="text-[20px] font-[500]">Zone.</p>
@@ -22,6 +36,10 @@ const Header = () => {
             Pricing
           </a>
           <button className="primary-button">Contact us</button>
+        </div>
+        <div className="mobile-container hidden">
+          <BurgerMenu menuOpen={menuOpen} toggleMenu={toggleMenu} />
+          <MobileMenu menuOpen={menuOpen} toggleMenu={toggleMenu} />
         </div>
       </div>
       <div className="header-content flex items-center py-24 relative">
@@ -80,6 +98,9 @@ const StyledHeader = styled.div`
   @media (max-width: 730px) {
     .header-nav {
       display: none;
+    }
+    .mobile-container {
+      display: block;
     }
     .header-content {
       padding: 20px 0;
