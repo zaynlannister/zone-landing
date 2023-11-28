@@ -11,8 +11,10 @@ const Header = () => {
 
     if (menuOpen) {
       document.documentElement.classList.remove("menu-open");
+      document.body.classList.remove("menu-open");
     } else {
       document.documentElement.classList.add("menu-open");
+      document.body.classList.add("menu-open");
     }
   };
   return (
