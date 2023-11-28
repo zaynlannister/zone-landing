@@ -56,8 +56,7 @@ const Header = () => {
         </div>
         <div className="w-[50%] header__img-container">
           <img
-            height="300px"
-            width="500px"
+            width="400px"
             className="absolute top-0 right-0"
             src="/img/header-bg.png"
             alt="bg"

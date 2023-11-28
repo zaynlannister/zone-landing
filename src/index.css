@@ -21,7 +21,7 @@ body {
 }
 
 body.menu-open {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .custom-link {
